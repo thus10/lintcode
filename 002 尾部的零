@@ -1,0 +1,15 @@
+class Solution {
+public:
+
+    long long trailingZeros(long long n) {
+    long long sum=0;
+    while(n!=0)
+    {
+        sum+=n/5;
+        n=n/5;
+    }
+    return sum;
+    
+    }
+};
+//sum = [N/5] +[N/5^2] +[N/5^3] + …
